@@ -7,4 +7,3 @@
 
  <a href="https://ivanctga.github.io/html-css/exercicios/ex002/">Executar o exercício 002</a>
 
-Bom Dia

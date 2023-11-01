@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(../img/lago.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav.menu {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    background: rgba(10, 10, 10, 0.8);
+    box-shadow: 13x solid #000;
+    align-items: center;      
+}
+
+#click1 {
+    display: none;
+}
+
+.logo {    
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 50px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+nav.menu ul {
+    display: flex;
+    justify-content: space-between;  
+    padding: 0 50px;  
+}
+
+nav.menu ul li {
+    list-style: none;   
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: #fff;         
+}
+
+nav.menu a.active,
+nav.menu a:hover {
+    border-bottom: 2px solid #ffa500;
+}
+
+nav .menu-bar {
+    font-size: 2.5em;
+    display: none;
+}
+
+i {
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    nav.menu ul  {
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        background:  rgba(22, 22, 22, 0.5);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav .menu-bar {
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+
+    #click1:checked ~ ul{
+        right:0;
+    }
+    
+}

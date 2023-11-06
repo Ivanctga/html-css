@@ -46,11 +46,22 @@ html, bory {
     font-weight: 700;
 }
 
+.logo:hover {
+    color: aqua;
+}
+
 .navbar a {
     font-size: 1.2rem;
     color: #fff;
     font-weight: 500;
     margin-left: 2.5rem;
+}
+
+.navbar a:hover {
+    color: aqua;   
+    padding-bottom: .3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 #check {
@@ -64,6 +75,12 @@ html, bory {
     cursor: pointer;
     display: none;
     right: 5%;
+}
+
+.icons:hover {
+    color: aqua;
+    padding-bottom: .3rem;
+    font-size: 2.9rem;
 }
 
 .banner {

@@ -7,21 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ivan Lopes">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <title></title>
+    <title>Regiões Retráteis</title>
 </head>
 
 <body>
 
     <div class="container pt-5">
-        <H1></H1>
+        <H1>Regiões Retráteis</H1>
         <hr>
-        <div class="">
-            
+        <div class="container py-2">
+            <div class="accordion accordion-flush" id="acc1">
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="button accordion-button"
+                         type="button" data-bs-toggle="collapse"
+                         data-bs-target="#item1">Região 1
+
+                        </div>
+                    </div>
+                    <div class="accordion-collapse collapse show" id="item1" data-bs-parent="#acc1">
+                        <div class="accordion-body">
+                            <p>Contéudo 1.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque debitis eius maiores sapiente ullam tempore exercitationem. Expedita animi architecto dignissimos, consectetur obcaecati, facilis aliquam amet nostrum quidem voluptatibus soluta voluptas voluptatum est, dolorem a numquam magnam debitis. Enim aperiam eveniet libero corporis nobis itaque perspiciatis, explicabo nemo ullam, quod pariatur?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="button accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item2">Região 2
+                
+                        </div>
+                    </div>
+                    <div class="accordion-collapse collapse show" id="item2" data-bs-parent="#acc1">
+                        <div class="accordion-body">
+                            <p>Contéudo 2.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque debitis eius maiores sapiente ullam
+                                tempore exercitationem. Expedita animi architecto dignissimos, consectetur obcaecati, facilis aliquam
+                                amet nostrum quidem voluptatibus soluta voluptas voluptatum est, dolorem a numquam magnam debitis. Enim
+                                aperiam eveniet libero corporis nobis itaque perspiciatis, explicabo nemo ullam, quod pariatur?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <div class="button accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item3">Região 3
+                
+                        </div>
+                    </div>
+                    <div class="accordion-collapse collapse show" id="item3" data-bs-parent="#acc1">
+                        <div class="accordion-body">
+                            <p>Contéudo 3.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque debitis eius maiores sapiente ullam
+                                tempore exercitationem. Expedita animi architecto dignissimos, consectetur obcaecati, facilis aliquam
+                                amet nostrum quidem voluptatibus soluta voluptas voluptatum est, dolorem a numquam magnam debitis. Enim
+                                aperiam eveniet libero corporis nobis itaque perspiciatis, explicabo nemo ullam, quod pariatur?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <h3 class="pt-5"><a href="../index.html">Voltar ao Início</a></h3>
